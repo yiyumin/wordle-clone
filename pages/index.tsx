@@ -194,7 +194,6 @@ const Home: NextPage = () => {
       guesses.filter((guess) => guess)
     );
 
-    // test after deploy on mobile
     if (navigator['canShare']) {
       navigator.share({ text: resultText });
     } else {
