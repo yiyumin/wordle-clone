@@ -74,7 +74,7 @@ const Home: NextPage = () => {
           prevStats.currentWinStreak + 1
         ),
         guessCounts: prevStats.guessCounts.map((count, numGuess) =>
-          numGuess === numGuesses ? count + 1 : count
+          numGuess === numGuesses - 1 ? count + 1 : count
         ),
       }));
     } else {
